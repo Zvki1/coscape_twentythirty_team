@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/auth/login';
 import Register from './pages/auth/register';
-import Dashboard from './pages/dashboard/dashboard';
+import PersoInfo from './pages/dashboard/PersoInfo';
 // import Navbar from './components/layouts/navbar';
 
 
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/perso-info" element={<PersoInfo />} />
         
       </Routes>
     </Router>

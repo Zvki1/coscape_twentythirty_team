@@ -12,7 +12,7 @@ import settings from "../assets/settings-02.svg";
 import settingsblue from "../assets/blue/settings-02.svg";
 const SideBar = () => {
   return (
-    <aside className="h-screen flex flex-col  fixed w-2/12 items-center pt-6 pb-9 border-r-2 border-[#EAEAEA] rounded-r-[20px] gap-8">
+    <aside className="h-screen flex flex-col   w-2/12 items-center pt-6 pb-9 border-r-2 border-[#EAEAEA] rounded-r-[20px] gap-8">
         {/* logo */}
       <Link to="/" className="font-bold text-xl text-[#4299E1] px-4 lg:px-8 ">
         Career-Up
