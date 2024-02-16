@@ -2,14 +2,10 @@ import { Link } from "react-router-dom";
 import { Divider } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 // importing assets
-import usericonblue from "../assets/blue/user-account.svg";
-import usericon from "../assets/user-account.svg";
-import myteam from "../assets/user-multiple.svg";
-import myteamblue from "../assets/blue/user-multiple.svg";
-import tests from "../assets/diploma.svg";
-import testsblue from "../assets/blue/diploma.svg";
-import settings from "../assets/settings-02.svg";
-import settingsblue from "../assets/blue/settings-02.svg";
+import usericonblue from "../../assets/blue/user-account.svg";
+import myteam from "../../assets/user-multiple.svg";
+import tests from "../../assets/diploma.svg";
+import settings from "../../assets/settings-02.svg";
 const SideBar = () => {
   return (
     <aside className="h-screen flex flex-col   w-2/12 items-center pt-6 pb-9 border-r-2 border-[#EAEAEA] rounded-r-[20px] gap-8">

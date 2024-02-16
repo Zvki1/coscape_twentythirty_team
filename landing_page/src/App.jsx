@@ -3,18 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/auth/login';
 import Register from './pages/auth/register';
 import PersoInfo from './pages/dashboard/PersoInfo';
-// import Navbar from './components/layouts/navbar';
+import { HeaderFooterLayout } from './components/layouts/layout-router/HeaderFooterLayout';
+import { SidebarLayout } from './components/layouts/layout-router/SidebarLayout';
 
 
 function App() {
   return (
     <Router>
-      {/* ma9dertch nhidi navbar f dashboard */}
-       {/* <Navbar /> */}
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/perso-info" element={<PersoInfo />} />
+        <Route path="/login" element={<HeaderFooterLayout><Login/></HeaderFooterLayout>} />
+        <Route path="/register" element={<HeaderFooterLayout><Register /></HeaderFooterLayout>} />
+        <Route path="/perso-info" element={<SidebarLayout><PersoInfo /></SidebarLayout>} />
         
       </Routes>
     </Router>
