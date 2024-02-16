@@ -1,15 +1,18 @@
 import './App.css'
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Login from './pages/auth/login';
+import Register from './pages/auth/register';
+
 function App() {
-
-
   return (
     <Router>
-    <>
-   <h1 className=' text-red-600'>hello</h1>
-    </>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </Router>
-  )
+  );
 }
 
 export default App
