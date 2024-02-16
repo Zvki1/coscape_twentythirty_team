@@ -17,9 +17,10 @@ function Login() {
         }
     }
   return (
-    <div className="flex justify-center items-center py-10 px-20 text-main-blue bg-grayblue rounded-xl">
+    <div className="mt-20 flex justify-center items-center p-30">
+      <div className="flex justify-center items-center py-10 px-20 text-main-blue bg-grayblue rounded-xl">
       <div>
-        <h1 className="font-bold mb-6">Login</h1>
+        <h1 className="font-bold text-center text-3xl mb-6">Login</h1>
         <div>
           <form>
             <div className="relative w-[450px] h-[67px] flex items-center ">
@@ -54,13 +55,15 @@ function Login() {
             </div>
           </form>
           <div className="flex flex-col py-4 gap-2 justify-center items-center">
-            <button onClick={handleLogin} className="w-[171px] h-[42px] text-white  flex justify-center items-center p-2 gap-2 bg-[#4299E1] rounded-[6px]">
-              Register
+            <button onClick={handleLogin}className="w-[60%] px-4 text-white flex justify-center items-center py-2 gap-2 bg-[#4299E1] rounded-[6px]">
+              Login
             </button>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    
   );
 }
 export default Login;

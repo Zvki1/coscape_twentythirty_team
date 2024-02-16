@@ -4,6 +4,7 @@ import { BiUser } from "react-icons/bi";
 import { RiLockLine } from "react-icons/ri";
 import { useState } from "react";
 import api from "../../api";
+import { Link } from "react-router-dom";
 
 
 function Register() {
@@ -20,9 +21,10 @@ function Register() {
         }
     }
   return (
-    <div className="flex justify-center items-center py-10 px-20 text-main-blue bg-grayblue rounded-xl">
+    <div className="mt-20 flex justify-center items-center p-30">
+      <div className="flex justify-center items-center py-10 px-20 text-main-blue bg-grayblue rounded-xl">
       <div>
-        <h1 className="font-bold mb-6">Register</h1>
+        <h1 className="text-center font-bold text-3xl mb-6">Register</h1>
         <div>
           <form>
             <div className="relative w-[450px] h-[67px] flex items-center ">
@@ -73,16 +75,17 @@ function Register() {
             </div>
           </form>
           <div className="flex flex-col py-4 gap-2 justify-center items-center">
-            <button onClick={handleRegister} className="w-[171px] h-[42px] text-white  flex justify-center items-center p-2 gap-2 bg-[#4299E1] rounded-[6px]">
+            <button onClick={handleRegister} className="w-[60%]  px-4 text-white flex justify-center items-center py-2 gap-2 bg-[#4299E1] rounded-[6px]">
               Register
             </button>
 
-            <button className="w-[171px] h-[42px] flex justify-center items-center p-2 gap-2 border border-secondary-blue rounded-[6px]">
+            <Link to="/login" className="w-[60%] flex justify-center items-center py-2 px-4 gap-2 border border-secondary-blue rounded-[6px]">
               Login to my account
-            </button>
+            </Link>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
