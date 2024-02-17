@@ -6,7 +6,8 @@ import PersoInfo from './pages/dashboard/PersoInfo';
 import { HeaderFooterLayout } from './components/layouts/layout-router/HeaderFooterLayout';
 import { SidebarLayout } from './components/layouts/layout-router/SidebarLayout';
 import ManageTeam from './pages/dashboard/manage-team';
-import { TestsPage } from './pages/dashboard/tests';
+import { TestsPage } from './pages/dashboard/tests-page/tests';
+import { Ressources } from './pages/dashboard/tests-page/ressources';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/perso-info" element={<SidebarLayout><PersoInfo /></SidebarLayout>} />
         <Route path="/manage-team" element={<SidebarLayout><ManageTeam /></SidebarLayout>} />
         <Route path="/tests" element={<SidebarLayout><TestsPage /></SidebarLayout>} />
-        
+        <Route path="/tests/ressources" element={<SidebarLayout><Ressources /></SidebarLayout>} />
       </Routes>
     </Router>
   );

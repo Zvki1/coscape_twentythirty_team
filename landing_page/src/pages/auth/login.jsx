@@ -2,9 +2,10 @@ import { HiOutlineMail } from "react-icons/hi";
 import { RiLockLine } from "react-icons/ri";
 import { useState } from "react";
 import api from "../../api";
-
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
     const [user,setUser] = useState({
         email:"",
         password:""
@@ -14,6 +15,7 @@ function Login() {
             console.log(user)
             const response = await api.post('/login', user)
             console.log(response)
+            navigate('/perso-info');
         }
     }
   return (

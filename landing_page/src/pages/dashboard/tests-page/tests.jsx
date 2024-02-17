@@ -1,8 +1,8 @@
-import { TopTitle } from "../../components/dashboard/manage-team/top-title"
-import StatiquesTop from "../../components/dashboard/tests-page/statiquesTop"
-import stat from "../../assets/testspage/stat.svg";
-import checked from "../../assets/testspage/checked.svg";
-import TestField from "../../components/dashboard/tests-page/test-field";
+import { TopTitle } from "../../../components/dashboard/manage-team/top-title"
+import StatiquesTop from "../../../components/dashboard/tests-page/statiquesTop"
+import stat from "../../../assets/testspage/stat.svg";
+import checked from "../../../assets/testspage/checked.svg";
+import TestField from "../../../components/dashboard/tests-page/test-field";
 import { useState } from "react";
 export const TestsPage =()=>{
     const [tests,setTests] = useState([

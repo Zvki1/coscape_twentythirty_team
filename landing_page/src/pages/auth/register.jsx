@@ -5,9 +5,10 @@ import { RiLockLine } from "react-icons/ri";
 import { useState } from "react";
 import api from "../../api";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
+  const navigate = useNavigate();
     const [user,setUser] = useState({
         email:"",
         password:"",
@@ -18,6 +19,7 @@ function Register() {
             console.log(user)
             const response = await api.post('/Register', user)
             console.log(response)
+            navigate('/perso-info');
         }
     }
   return (

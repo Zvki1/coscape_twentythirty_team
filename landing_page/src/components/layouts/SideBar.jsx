@@ -5,11 +5,12 @@ import usericonblue from "../../assets/blue/user-account.svg";
 import myteam from "../../assets/user-multiple.svg";
 import tests from "../../assets/diploma.svg";
 import settings from "../../assets/settings-02.svg";
+import Logo from '../../assets/Logo.svg';
 const SideBar = () => {
   return (
     <aside className="h-screen flex flex-col   w-2/12 items-center pt-6 pb-9 border-r-2 border-[#EAEAEA] rounded-r-[20px] gap-8">
       <Link to="/" className="font-bold text-xl text-[#4299E1] px-4 lg:px-8 ">
-        Career-Up
+        <img src={Logo} alt='logo'/>
       </Link>
 
       <Divider />

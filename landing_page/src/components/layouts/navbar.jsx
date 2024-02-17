@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-
+import Logo from '../../assets/Logo.svg';
 function Navbar() {
 
   return (
     <nav className="flex justify-between items-center p-4 bg-white">
       <Link to="/" className="font-bold text-xl text-[#4299E1]">
-        Career-Up
+        <img src={Logo} alt='logo'/>
       </Link>
       <div className="flex justify-center items-center gap-4">
         <Link to="/home" className="text-gray-600">
